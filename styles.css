@@ -540,3 +540,261 @@ body {
 .hidden {
     display: none
 }
+
+/* =========================================================
+   Responsividade Aprimorada (Incremental)
+   Ajustes finos para os breakpoints solicitados.
+   Preserva 100% das regras e estilos existentes.
+   ========================================================= */
+
+/* ==== DESKTOP GRANDE (>=1366px) ==== */
+@media (min-width: 1366px) {
+    .container { max-width: 1180px; }
+    .container.narrow { max-width: 1020px; }
+}
+
+/* ==== DESKTOP EXTRA GRANDE (>=1600px) ==== */
+@media (min-width: 1600px) {
+    .container { max-width: 1320px; }
+    .container.narrow { max-width: 1140px; }
+    .page-title { font-size: 34px; }
+    .card { padding: 22px; }
+}
+
+/* ==== DESKTOP ULTRA (>=1920px) ==== */
+@media (min-width: 1920px) {
+    .container { max-width: 1440px; }
+    .container.narrow { max-width: 1240px; }
+    .page-title { font-size: 38px; }
+    .auth-card { max-width: 520px; padding: 30px; }
+}
+
+/* ==== NOTEBOOK (1280px) ==== */
+@media (min-width: 1280px) and (max-width: 1365.98px) {
+    .container { max-width: 1140px; }
+}
+
+/* ==== TABLET LANDSCAPE (1024px) ==== */
+@media (max-width: 1024px) {
+    .container { max-width: 100%; }
+}
+
+/* ==== TABLET PORTRAIT (768px) ==== */
+@media (max-width: 768px) {
+    .container { padding: 0 14px; margin: 18px auto; }
+    .topbar { padding: 12px 16px; }
+    .page-title { font-size: 26px; }
+    .nav { gap: 6px; }
+    .nav-btn { padding: 7px 10px; font-size: 13px; }
+    .view.auth { padding: 18px; }
+}
+
+/* ==== MOBILE GRANDE (480px) ==== */
+@media (max-width: 480px) {
+    .container { padding: 0 12px; margin: 14px auto; }
+    .topbar {
+        padding: 10px 12px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .nav {
+        width: 100%;
+        justify-content: space-between;
+        gap: 4px;
+    }
+    .brand-icon { font-size: 20px; }
+    .brand-name { font-size: 16px; }
+    .page-title { font-size: 22px; }
+    .muted { font-size: 14px; }
+    .card { padding: 14px; border-radius: 16px; }
+    .auth-card { padding: 20px; border-radius: 18px; }
+    .view.auth { padding: 14px; }
+    .auth-logo { width: 48px; height: 48px; font-size: 26px; }
+    .auth-title { font-size: 24px; }
+    .auth-heading { font-size: 18px; }
+    .field input[type="date"],
+    .field input[type="text"],
+    .field input[type="email"],
+    .field input[type="password"],
+    .field input[type="tel"] {
+        padding: 12px;
+        font-size: 14px;
+    }
+    .field-label { font-size: 14px; }
+    .services-grid { gap: 10px; }
+    .service { padding: 12px; }
+    .service h4 { font-size: 14px; }
+    .service .meta { font-size: 12px; }
+    .price { font-size: 14px; }
+    .times-grid { gap: 8px; }
+    .time { padding: 8px 4px; font-size: 13px; }
+    .btn { padding: 11px 14px; font-size: 14px; }
+    .btn.primary.lg { padding: 13px 16px; font-size: 15px; }
+    .item { padding: 14px; border-radius: 16px; }
+    .item-title { font-size: 16px; }
+    .item-head { gap: 8px; }
+    .item-meta {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px;
+        font-size: 13px;
+    }
+    .item-meta .badge { min-width: 0; }
+    .section-title h3 { font-size: 15px; }
+    .tip { padding: 14px; font-size: 14px; }
+    .list-item { gap: 10px; }
+    .list-icon { width: 32px; height: 32px; font-size: 16px; }
+    .hero-icon { width: 40px; height: 40px; font-size: 20px; border-radius: 12px; }
+}
+
+/* ==== MOBILE MÉDIO (414px) ==== */
+@media (max-width: 414px) {
+    .container { padding: 0 10px; }
+    .topbar { padding: 8px 10px; }
+    .page-title { font-size: 20px; }
+    .nav-btn { padding: 6px 8px; font-size: 12px; }
+    .card { padding: 12px; }
+    .auth-card { padding: 18px; }
+}
+
+/* ==== MOBILE (390px) ==== */
+@media (max-width: 390px) {
+    .topbar { padding: 8px; }
+    .brand-name { font-size: 15px; }
+    .nav { gap: 3px; }
+    .nav-btn { padding: 5px 6px; font-size: 11px; }
+}
+
+/* ==== MOBILE PEQUENO (375px) ==== */
+@media (max-width: 375px) {
+    .container { padding: 0 8px; }
+    .page-title { font-size: 18px; }
+    .nav-btn { padding: 5px 5px; font-size: 10px; }
+    .brand-icon { font-size: 18px; }
+    .brand-name { font-size: 14px; }
+    .auth-card { padding: 14px; }
+    .auth-logo { width: 42px; height: 42px; font-size: 22px; border-radius: 14px; }
+    .auth-title { font-size: 20px; }
+    .time { font-size: 12px; padding: 6px 2px; }
+    .item-title { font-size: 15px; }
+}
+
+/* ==== MOBILE EXTRA PEQUENO (360px) ==== */
+@media (max-width: 360px) {
+    .container { padding: 0 8px; margin: 10px auto; }
+    .topbar { padding: 6px 8px; gap: 6px; }
+    .nav-btn { font-size: 9px; padding: 4px 4px; }
+    .page-title { font-size: 17px; }
+    .card { padding: 10px; border-radius: 14px; }
+    .btn { padding: 10px 12px; font-size: 13px; }
+    .item-meta { font-size: 12px; gap: 6px; }
+}
+
+/* ==== MOBILE ULTRA PEQUENO (320px) ==== */
+@media (max-width: 320px) {
+    .container { padding: 0 6px; }
+    .topbar {
+        padding: 6px 6px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+    }
+    .brand {
+        justify-content: center;
+    }
+    .brand-icon { font-size: 16px; }
+    .brand-name { font-size: 13px; }
+    .nav {
+        width: 100%;
+        justify-content: space-between;
+        gap: 2px;
+    }
+    .nav-btn {
+        font-size: 9px;
+        padding: 5px 3px;
+        flex: 1;
+        min-width: 0;
+    }
+    .page-title { font-size: 16px; }
+    .auth-card {
+        padding: 12px;
+        border-radius: 16px;
+    }
+    .auth-logo {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+        border-radius: 12px;
+    }
+    .auth-title { font-size: 18px; }
+    .auth-sub { font-size: 12px; }
+    .auth-heading { font-size: 15px; margin: 4px 0 8px; }
+    .form { gap: 10px; }
+    .field input[type="date"],
+    .field input[type="text"],
+    .field input[type="email"],
+    .field input[type="password"],
+    .field input[type="tel"] {
+        padding: 10px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+    .field-label { font-size: 12px; }
+    .btn.primary { font-size: 13px; padding: 10px; }
+    .btn.primary.lg { font-size: 14px; padding: 11px 12px; }
+    .card {
+        padding: 10px;
+        border-radius: 14px;
+    }
+    .service {
+        padding: 10px;
+        gap: 8px;
+        border-radius: 12px;
+    }
+    .service h4 { font-size: 13px; }
+    .service .meta { font-size: 11px; }
+    .price { font-size: 13px; }
+    .times-grid { gap: 6px; }
+    .time {
+        font-size: 11px;
+        padding: 6px 2px;
+        border-radius: 10px;
+    }
+    .item {
+        padding: 10px;
+        border-radius: 14px;
+        gap: 8px;
+    }
+    .item-title { font-size: 14px; }
+    .item-meta {
+        font-size: 11px;
+        padding: 6px 8px;
+        gap: 6px;
+        border-radius: 10px;
+    }
+    .badge { font-size: 11px; gap: 4px; }
+    .section-title h3 { font-size: 14px; }
+    .section-title .icon {
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+    }
+    .tip {
+        padding: 12px;
+        font-size: 12px;
+        border-radius: 12px;
+    }
+    .view.auth {
+        padding: 8px;
+    }
+    .tagline { font-size: 11px; }
+    .link { font-size: 13px; }
+    .hero-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 12px;
+    }
+    .grid.two { gap: 12px; }
+    .stack { gap: 12px; }
+}
